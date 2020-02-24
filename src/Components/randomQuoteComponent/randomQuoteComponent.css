@@ -1,0 +1,10 @@
+.quote {
+  color: #52c256;
+  font-size: 1.5em;
+}
+
+.author {
+  color: #ccc;
+  font-size: 1em;
+  font-style: italic;
+}

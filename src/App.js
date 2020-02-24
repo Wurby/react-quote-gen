@@ -1,24 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import MenuComponent from "./Components/menuComponent";
+import AddQuote from "./Components/addQuoteComponent/addQuoteComponent";
+import DisplayQuote from "./Components/randomQuoteComponent/randomQuoteComponent";
 
 function App() {
+  const menuBar = MenuComponent();
+  const content = <DisplayQuote quote="stuff" author="me" />;
+  const addQuoteForm = AddQuote();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <header>{menuBar}</header>
+      <div>
+        {content}
+        {addQuoteForm}
+      </div>
     </div>
   );
 }
