@@ -1,6 +1,6 @@
 # Simple Quote Generator app using react
 
-This application is a quote generator used to learn some simple react concepts, functional components, such as hooks, file and folder structure, routing, and other things.
+This application is a quote generator used to learn some simple react concepts such as functional components, hooks, file and folder structure, routing, and other things.
 
 ## What you can do with it
 
