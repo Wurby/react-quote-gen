@@ -1,16 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 import "./randomQuoteComponent.css";
 
 export default function DisplayQuote(props) {
+  const [count, setCount] = useState(0);
+
   return (
-    <div class="card-wrapper">
-      <article class="card">
+    <div className="card-wrapper">
+      <article className="card">
         <h2>Enjoy the quote:</h2>
-        <span class="quote">"{props.quote}"</span>
+        <div className="quote">"{props.quoteArray[count].quote}"</div>
+
+        <span className="author">~{props.quoteArray[count].author}.</span>
         <br />
-        <span class="author">~{props.author}.</span>
-        <br />
-        <button>Next Quote</button>
+        <button
+          onClick={() => {
+            count + 1 < props.quoteArray.length
+              ? setCount(count + 1)
+              : setCount(0);
+          }}
+        >
+          Next Quote
+        </button>
       </article>
     </div>
   );

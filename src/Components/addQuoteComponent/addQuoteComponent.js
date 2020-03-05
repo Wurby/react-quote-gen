@@ -1,41 +1,28 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "./addQuoteComponent.css";
 
-export default function AddQuote() {
-  const [quote, setQuote] = useState({
-    quote: "quote here",
-    author: "author name"
-  });
-
-  function handleQuoteChange(event) {
-    setQuote({ quote: event.target.value, author: quote.author });
+export default function AddQuote(props) {
+  function submit(event) {
+    event.preventDefault();
+    props.addQuoteToArray(props.handleQuote, props.handleAuthor);
+    props.setQuote({ quote: "", author: "" });
   }
-  function handleAuthorChange(event) {
-    setQuote({ quote: quote.quote, author: event.target.value });
-  }
-
   return (
-    <div class="card-wrapper">
-      {quote.quote + " " + quote.author}
-      <form class="card">
+    <div className="card-wrapper">
+      <form className="card" name="form" onSubmit={submit}>
         <textarea
-          placeholder="Enter a quote here!"
+          value={props.quote.quote}
+          placeholder={props.initialFormState.quote}
           name="quote"
-          onChange={handleQuoteChange}
+          onChange={props.handleQuote}
         ></textarea>
         <input
-          placeholder="Author Name"
+          value={props.quote.author}
+          placeholder={props.initialFormState.author}
           name="authorName"
-          onChange={handleAuthorChange}
+          onChange={props.handleAuthor}
         ></input>
-        <button
-          type="submit"
-          onClick={event => {
-            event.preventDefault();
-          }}
-        >
-          Submit
-        </button>
+        <button type="submit">Submit</button>
       </form>
     </div>
   );
