@@ -1,5 +1,10 @@
 const quotesFileArray = [
   {
+    quote:
+      "As it now stands, this quote app does not save quotes you add between sessions. This is intentional. I hope you enjoy this mini portfolio piece.",
+    author: "Joshua Pearson"
+  },
+  {
     quote: "The way to get started is to quit talking and begin doing",
     author: "Walt Disney"
   },
