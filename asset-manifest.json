@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/react-quote-gen/static/css/main.5e284e3c.chunk.css",
-    "main.js": "/react-quote-gen/static/js/main.f5f8adfd.chunk.js",
-    "main.js.map": "/react-quote-gen/static/js/main.f5f8adfd.chunk.js.map",
+    "main.js": "/react-quote-gen/static/js/main.872051fa.chunk.js",
+    "main.js.map": "/react-quote-gen/static/js/main.872051fa.chunk.js.map",
     "runtime-main.js": "/react-quote-gen/static/js/runtime-main.c1dd83fe.js",
     "runtime-main.js.map": "/react-quote-gen/static/js/runtime-main.c1dd83fe.js.map",
     "static/js/2.54cb113f.chunk.js": "/react-quote-gen/static/js/2.54cb113f.chunk.js",
     "static/js/2.54cb113f.chunk.js.map": "/react-quote-gen/static/js/2.54cb113f.chunk.js.map",
     "index.html": "/react-quote-gen/index.html",
-    "precache-manifest.613045f0cef9191c42bbd656201d7861.js": "/react-quote-gen/precache-manifest.613045f0cef9191c42bbd656201d7861.js",
+    "precache-manifest.deb69a2380e683b2b3c259c2cebe8ffb.js": "/react-quote-gen/precache-manifest.deb69a2380e683b2b3c259c2cebe8ffb.js",
     "service-worker.js": "/react-quote-gen/service-worker.js",
     "static/css/main.5e284e3c.chunk.css.map": "/react-quote-gen/static/css/main.5e284e3c.chunk.css.map",
     "static/js/2.54cb113f.chunk.js.LICENSE.txt": "/react-quote-gen/static/js/2.54cb113f.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.c1dd83fe.js",
     "static/js/2.54cb113f.chunk.js",
     "static/css/main.5e284e3c.chunk.css",
-    "static/js/main.f5f8adfd.chunk.js"
+    "static/js/main.872051fa.chunk.js"
   ]
 }
