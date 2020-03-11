@@ -1,7 +1,7 @@
 const quotesFileArray = [
   {
     quote:
-      "As it now stands, this quote app does not save quotes you add between sessions. This is intentional. I hope you enjoy this mini portfolio piece.",
+      "Not optimized for mobile devices. As it now stands, this quote app does not save quotes between sessions. This is intentional. I hope you enjoy this mini portfolio piece.",
     author: "Joshua Pearson"
   },
   {
