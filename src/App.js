@@ -53,21 +53,29 @@ function App() {
     <Router>
       <nav className="topnav">
         <span>
-          <NavLink exact={true} to="/" activeClassName="is-active">
+          <NavLink
+            exact={true}
+            to="/react-quote-gen/"
+            activeClassName="is-active"
+          >
             Random Quotes
           </NavLink>
         </span>
         <span>
-          <NavLink exact={true} to="/quotes-list" activeClassName="is-active">
+          <NavLink
+            exact={true}
+            to="/react-quote-gen/quotes-list"
+            activeClassName="is-active"
+          >
             List of Quotes
           </NavLink>
         </span>
       </nav>
       <Switch>
-        <Route exact={true} path="/">
+        <Route exact={true} path="/react-quote-gen/">
           {content} {addQuoteForm}
         </Route>
-        <Route exact={true} path="/quotes-list">
+        <Route exact={true} path="/react-quote-gen/quotes-list">
           {listOfQuotes}
         </Route>
       </Switch>
